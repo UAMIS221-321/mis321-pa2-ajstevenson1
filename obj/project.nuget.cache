@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "skam8TMPHRV0YTT52BBajPQl08r8TQ7rMsaWyxinO/CMuQeHZP7CNcUmphrKIZ9z/HLci/iIVgdw0YU4IDQ0eg==",
+  "success": true,
+  "projectFilePath": "/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/mis321-pa2-ajstevenson1.csproj",
+  "expectedPackageFiles": [
+    "/Users/andrewstevenson/.nuget/packages/microsoft.netcore.app.host.osx-x64/5.0.13/microsoft.netcore.app.host.osx-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
