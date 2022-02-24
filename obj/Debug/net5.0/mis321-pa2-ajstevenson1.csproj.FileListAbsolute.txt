@@ -1,0 +1,16 @@
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/bin/Debug/net5.0/mis321-pa2-ajstevenson1
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/bin/Debug/net5.0/mis321-pa2-ajstevenson1.deps.json
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/bin/Debug/net5.0/mis321-pa2-ajstevenson1.runtimeconfig.json
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/bin/Debug/net5.0/mis321-pa2-ajstevenson1.runtimeconfig.dev.json
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/bin/Debug/net5.0/mis321-pa2-ajstevenson1.dll
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/bin/Debug/net5.0/ref/mis321-pa2-ajstevenson1.dll
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/bin/Debug/net5.0/mis321-pa2-ajstevenson1.pdb
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/obj/Debug/net5.0/mis321-pa2-ajstevenson1.csproj.AssemblyReference.cache
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/obj/Debug/net5.0/mis321-pa2-ajstevenson1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/obj/Debug/net5.0/mis321-pa2-ajstevenson1.AssemblyInfoInputs.cache
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/obj/Debug/net5.0/mis321-pa2-ajstevenson1.AssemblyInfo.cs
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/obj/Debug/net5.0/mis321-pa2-ajstevenson1.csproj.CoreCompileInputs.cache
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/obj/Debug/net5.0/mis321-pa2-ajstevenson1.dll
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/obj/Debug/net5.0/ref/mis321-pa2-ajstevenson1.dll
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/obj/Debug/net5.0/mis321-pa2-ajstevenson1.pdb
+/Users/andrewstevenson/Repos/mis321-pa2-ajstevenson1/obj/Debug/net5.0/mis321-pa2-ajstevenson1.genruntimeconfig.cache
