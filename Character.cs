@@ -24,7 +24,7 @@ namespace mis321_pa2_ajstevenson1
 
         public void DisplayStats()
         {
-            System.Console.WriteLine($"{Name} stats: \nHealth: {Health}\nMax Power: {MaxPower}\nLast Attack Power: {AttackStrength}\nLast Defensive Power: {DefensivePower}");
+            System.Console.WriteLine($"{PlayerName} stats: \nCharacter: {Name}\nHealth: {Health}\nMax Power: {MaxPower}\nLast Attack Power: {AttackStrength}\nLast Defensive Power: {DefensivePower}");
         }
 
         public double GetNumber(double total)

@@ -119,12 +119,12 @@ namespace mis321_pa2_ajstevenson1
             }
             if(player2.Health == 0)
             {
-                System.Console.WriteLine($"{player2.Name} has lost all of their health!");
+                System.Console.WriteLine($"{player2.PlayerName} has lost all of their health!");
                 System.Console.WriteLine($"{player1.PlayerName} wins!");
             }
             else
             {
-                System.Console.WriteLine($"{player1.Name} has lost all of their health!");
+                System.Console.WriteLine($"{player1.PlayerName} has lost all of their health!");
                 System.Console.WriteLine($"{player2.PlayerName} wins!");
             }
             PressKeyToContinue();
