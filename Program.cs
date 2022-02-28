@@ -4,8 +4,10 @@ namespace mis321_pa2_ajstevenson1
 {
     class Program
     {
-        static void Main(string[] args)
+        //EXTRAS: Play against AI, sophisticated error handling, waiting after attacks before showing damage
+        static void Main(string[] args) 
         {
+            Console.Clear();
             System.Console.WriteLine("Welcome to the Battle of Calypso's maelstrom!");
             DisplayMainMenu();
             int userInput = TestInputInt();
@@ -133,7 +135,90 @@ namespace mis321_pa2_ajstevenson1
 
         static void PlayAI()
         {
+            Console.Clear();
+            System.Console.WriteLine("Player, select your character:");
+            CharacterMenu();
+            int firstUserInput = TestInputInt();
+            Console.Clear();
+            System.Console.WriteLine("Player, please enter your name:");
+            string firstName = Console.ReadLine();
+            Console.Clear();
+            System.Console.WriteLine("The computer is now chosing their character");
+            PressKeyToContinue();
+            int secondUserInput = GetAICharacter();
+            Character player1 = new Character();
+            DetermineCharacter(firstUserInput, firstName, ref player1);
+            Character player2 = new Character();
+            DetermineCharacter(secondUserInput, "Computer", ref player2);
+            player1.SetAttackBehavior(player2);
+            player2.SetAttackBehavior(player1);
+            System.Console.WriteLine($"The computer has chosen {player2.Name}.");
 
+            int goFirst = DetermineFirst();
+            if(goFirst == 1)
+            {
+                System.Console.WriteLine($"{player1.PlayerName} attacks first!");
+                PressKeyToContinue();
+                while (player1.Health > 0 && player2.Health > 0)
+                {
+                    player1.AttackBehavior.Attack(player1, player2);
+                    PressKeyToContinue();
+                    if(player2.Health > 0)
+                    {
+                       player2.AttackBehavior.Attack(player2, player1);
+                       PressKeyToContinue();
+                    }
+                    player1.DisplayStats();
+                    System.Console.WriteLine();
+                    player2.DisplayStats();
+                    System.Console.WriteLine();
+                    PressKeyToContinue();
+                    player1.UpdateAttackDefend(); // fix this pls
+                    player2.UpdateAttackDefend();
+                }
+                
+            }
+            else
+            {
+                System.Console.WriteLine($"{player2.PlayerName} attacks first!");
+                PressKeyToContinue();
+                while (player1.Health > 0 && player2.Health > 0)
+                {
+                    player2.AttackBehavior.Attack(player2, player1);
+                    PressKeyToContinue();
+                    if(player1.Health > 0)
+                    {
+                       player1.AttackBehavior.Attack(player1, player2);
+                       PressKeyToContinue();
+                    }
+                    player1.DisplayStats();
+                    System.Console.WriteLine();
+                    player2.DisplayStats();
+                    System.Console.WriteLine();
+                    PressKeyToContinue();
+                    player1.UpdateAttackDefend(); // fix this pls
+                    player2.UpdateAttackDefend();
+                }
+            }
+            if(player2.Health == 0)
+            {
+                System.Console.WriteLine($"{player2.PlayerName} has lost all of their health!");
+                System.Console.WriteLine($"{player1.PlayerName} wins!");
+            }
+            else
+            {
+                System.Console.WriteLine($"{player1.PlayerName} has lost all of their health!");
+                System.Console.WriteLine($"{player2.PlayerName} wins!");
+            }
+            PressKeyToContinue();
+        }
+
+        static int GetAICharacter()
+        {
+            Random random = new Random();
+            int num = random.Next(3);
+            num++;
+            return num;
         }
 
         static void DetermineCharacter(int userInput, string name, ref Character player)

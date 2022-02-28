@@ -25,17 +25,23 @@ namespace mis321_pa2_ajstevenson1
         {
             System.Console.WriteLine($"{attacker.PlayerName} fires their cannon to attack!");
             System.Console.WriteLine($"{defender.PlayerName} defends!");
+            Wait();
             double damageDealt = Math.Round((attacker.AttackStrength - defender.DefensivePower) * TypeBonus, 1);
             if(damageDealt < 0)
             {
                 damageDealt = 0;
             }
+            defender.Health -= damageDealt;
             if(defender.Health < 0)
             {
                 defender.Health = 0;
             }
-            defender.Health -= damageDealt;
-            System.Console.WriteLine($"{attacker.PlayerName} attacked with {attacker.AttackStrength} power and did {damageDealt} damage with his Cannon!\n{defender.PlayerName} loses {damageDealt} health.");
+            System.Console.WriteLine($"{attacker.PlayerName} attacked with {attacker.AttackStrength} power and did {damageDealt} damage with their Cannon!\n{defender.PlayerName} loses {damageDealt} health.");
+        }
+
+        public void Wait()
+        {
+            System.Threading.Thread.Sleep(2000);
         }
     }
 }

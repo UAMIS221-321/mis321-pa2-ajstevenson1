@@ -44,6 +44,7 @@ namespace mis321_pa2_ajstevenson1
             number = GetNumber(MaxPower);
             DefensivePower = number;
         }
+
     }
 
     

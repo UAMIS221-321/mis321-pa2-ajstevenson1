@@ -25,6 +25,7 @@ namespace mis321_pa2_ajstevenson1
         {
             System.Console.WriteLine($"{attacker.PlayerName} distracts their opponent!");
             System.Console.WriteLine($"{defender.PlayerName} defends!");
+            Wait();
             double damageDealt = Math.Round((attacker.AttackStrength - defender.DefensivePower) * TypeBonus, 1);
             if(damageDealt < 0)
             {
@@ -35,7 +36,12 @@ namespace mis321_pa2_ajstevenson1
             {
                 defender.Health = 0;
             }
-            System.Console.WriteLine($"{attacker.PlayerName} attacked with {attacker.AttackStrength} power and did {damageDealt} damage with his distraction!\n{defender.PlayerName} loses {damageDealt} health.");
+            System.Console.WriteLine($"{attacker.PlayerName} attacked with {attacker.AttackStrength} power and did {damageDealt} damage with their distraction!\n{defender.PlayerName} loses {damageDealt} health.");
+        }
+
+        public void Wait()
+        {
+            System.Threading.Thread.Sleep(2000);
         }
     }
 }
